@@ -1,3 +1,10 @@
+ad
+$(document).ready(function(){
+    $("button").click(function(event){
+        event.preventDefault();
+    });
+});
+
 function initPage() {
     var input = document.getElementById("city-input");
     var search = document.getElementById("search-button");
@@ -8,7 +15,15 @@ function initPage() {
     var currentWind = document.getElementById("wind-speed");
     var currentUV = document.getElementById("UV-index");
     var history = document.getElementById("history");
-    var searchHistory = JSON.parse(localStorage.getItem("search")) || [];    
+    var searchHistory = JSON.parse(localStorage.getItem("search")) || [];  
+    var preventDefault;
+
+    // prevent default
+    function preventDefault(event){
+        event.preventDefault();
+    }
+
+    
 
     var APIKey = "7ad9a1c1847ed856b40b5b7c6a293117";
 //  When search button is clicked, read the city name typed by the user
@@ -77,6 +92,7 @@ function initPage() {
             })
         });  
     }
+
 
     search.addEventListener("click",function() {
         var searchTerm = input.value;
