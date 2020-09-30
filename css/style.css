@@ -1,25 +1,56 @@
 
 @media (min-width: 320px) and (max-width: 768px) {
 
+
 h1{
     font-size:1.5rem;
+}
+
+.input-group-append {
+    margin-left: 0;
 }
 
 .top-header {
     height:50px!important;
 }
 
-
+.bg-light {
+    display:block;
 }
-/* end of media query */
+.forecast {
+    width:110px;
+}
+#city-input{
+    text-transform: capitalize;
+}
+#history{
+    display:none;
+}
+.col-8{
+    width:100%!important;
+    max-width:100%;
+    flex: 0 0 95%;
+}
+.col-4 {
+    -ms-flex: 0 0 33%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-top:20px;
+}
+}
+/********** end of media query ************/
 
 * {
     -webkit-border-radius: 0 !important;
        -moz-border-radius: 0 !important;
             border-radius: 0 !important;
-    -webkit-font-smoothing: antialiased;
-     -moz-osx-font-smoothing: grayscale;
   }
+  
+body{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif!important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 img {
     height:42px!important;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
@@ -69,9 +100,7 @@ img {
     font-size: 18px;
 }
 
-.input-group-append{
-    width:100px!important;
-}
+
 #temperature{
     margin-top:20px;
 }
