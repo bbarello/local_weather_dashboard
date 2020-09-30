@@ -1,0 +1,82 @@
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+h1{
+    font-size:1.5rem;
+}
+
+.top-header {
+    height:50px!important;
+}
+
+
+}
+/* end of media query */
+
+* {
+    -webkit-border-radius: 0 !important;
+       -moz-border-radius: 0 !important;
+            border-radius: 0 !important;
+    -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+  }
+img {
+    height:42px!important;
+}
+.border-primary{
+    border-color:#ced4da!important;
+    padding:3%;
+}
+.top-header {
+    background-color: rgb(52, 58, 64) ;
+    text-align:center;
+    color:#fff;
+    padding:10px 0 0 0;
+    margin:0;
+    height:80px;
+    width:100%;
+  }
+
+  .navbar-brand {
+    font-size: 36px;
+}
+.bg-primary{
+    background-color:#007bff!important;
+}
+
+.search-header {
+    font-size: 22px;
+    font-weight: normal;
+}
+.d-block{
+    border-bottom:1px solid #ced4da!important;
+    border-top:0!important;
+    border-right:0!important;
+    border-left:0!important;
+    text-transform: capitalize;
+    height:46px;
+}
+
+.city-name {
+    font-size: 30px;
+    font-weight:500;
+    padding-bottom:15px;
+}
+.forecast-date {
+    font-size: 18px;
+}
+
+.input-group-append{
+    width:100px!important;
+}
+#temperature{
+    margin-top:20px;
+}
+
+#history{
+    border:1px solid #ced4da!important;
+}
+.orange{
+    background-color:orangered;
+    height:20px;
+}
