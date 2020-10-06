@@ -1,4 +1,4 @@
-ad
+
 $(document).ready(function(){
     $("button").click(function(event){
         event.preventDefault();
@@ -18,12 +18,6 @@ function initPage() {
     var searchHistory = JSON.parse(localStorage.getItem("search")) || [];  
     var preventDefault;
 
-    // prevent default
-    function preventDefault(event){
-        event.preventDefault();
-    }
-
-    
 
     var APIKey = "7ad9a1c1847ed856b40b5b7c6a293117";
 //  When search button is clicked, read the city name typed by the user
